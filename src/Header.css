@@ -1,0 +1,71 @@
+.header{
+    height: 60px;
+    display : flex; /* flex가 옆으로 쌓인다는 의미 자바스트립트는 위에서 아래로 쌓임 */
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_logo{
+    width: 100px;
+    object-fit: contain;
+    margin :0 20px;
+    margin-top: 15px;
+}
+
+.header_search {
+    display: flex;
+    flex : 1; /*차지하는 비율*/
+    align-items: center;
+    border-radius: 20px;
+}
+
+.header_searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none; /*검색창의 테두리 (없는게 깔끔해보임)*/
+    width: 100%;
+}
+
+.header_searchIcon {
+    background-color: #cd9042;
+    padding: 5px;
+    height: 15px;
+}
+
+.header_option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header_nav {
+    display: flex; /* 123 오른쪽으로 딱딱 가라는 의미 */
+    justify-content: space-between; /* 아이템들 공간 나누는 법 */
+
+}
+
+.header_optionLineOne {
+    font-size: 10px;
+}
+
+.header_optionLineTwo {
+    font-size: 13px;
+    font-weight : 800; /* 차지하고 있는 공간의 비율*/
+    margin-top: 3px;
+}
+
+.header_optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header_optionLineTwoheader_basketCount {
+    margin-right: 10px;
+    margin-left: 10px;
+}
