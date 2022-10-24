@@ -10,7 +10,7 @@ function Home() {
                 alt="" />
 
                 <div className="home_row">
-                    <Product id="2323" title="제품 1입니다." price={3000} //숫자는 {}여기다 넣어야 숫자로 인식 ""여기에 넣으면 문자로 인식
+                    <Product id="2323" title="제품 1" price={3000} //숫자는 {}여기다 넣어야 숫자로 인식 ""여기에 넣으면 문자로 인식
                     image="https://en.pimg.jp/024/292/158/1/24292158.jpg"
                     rating={5} /> {/*rating안에는 무조건 정수로 소수 넣으면 오류 */}
                     

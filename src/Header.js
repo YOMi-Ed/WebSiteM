@@ -43,14 +43,14 @@ function Header() {
                     <div className="header_optionBasket">
                         <ShoppingBasket/>
                         <span className="headeroptionLineTwoheader_basketCount">
-                            0
+                            {basket?.length} {/* 한 번더 검증해줌 undefined를 반환하지 않게 */}
                         </span>
                     </div>
                 </Link>
 
             </div>
         </div>
-  )
+  );
 }
 
 export default Header;
