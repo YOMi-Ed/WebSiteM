@@ -19,14 +19,16 @@ const reducer = (state, action) => {
             };
 
             case 'REMOVE_FROM_BASKET' :
+                console.log(state)
+                console.log(action)
                 const index = state.basket.findIndex(
-                    (basketItem) => basketItem.id === action.id
+                    (basketItem) => basketItem.id === action.id // basketItem.id 와 action.id 가 동일하면 첫 번째에 있는 인덱스 값을 보내준다.
                 );
 
-                let newBasket = [...state.basket];
+                let newBasket = [...state.basket]; //splice는 원본을 제거하기 때문에 하나 생성해준다.
 
                 if(index >= 0){
-                    newBasket.splice(index, 1)
+                    newBasket.splice(index, 1) //splice(제거를 시작할 인덱스. 몇 개를 제거할 것인가)
                 } else {
                     console.warn(
                         '(id' + action.id +') 이 장바구니에 존재하지 않습니다.'
@@ -35,6 +37,7 @@ const reducer = (state, action) => {
 
                 return {
                     ...state,
+                    basket: newBasket
                 }
         default :
             return state;

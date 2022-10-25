@@ -13,7 +13,7 @@ function Header() {
         <div className="header">
             <Link to ="/">
                 <img className="header_logo"
-                src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F52%2F8a%2Fe7%2F528ae75ee9ae1fc68649e4f35aa42df8.jpg&type=sc960_832" 
+                src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" 
                 />
             </Link>
 
@@ -26,7 +26,9 @@ function Header() {
             <div className="header_nav">
                 <div className="header_option">
                     <span className="header_optionLineOne"> 안녕하세요 ! </span>
-                    <span className="header_optionLineTwo"> 로그인하기 ! </span>
+                    <Link to="/login" className="homelogin">
+                        <span className="header_optionLineTwo"> 로그인하기 ! </span>
+                    </Link>
                 </div>
 
                 <div className="header_option">
